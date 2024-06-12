@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>qr code</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      background-color: aliceblue;
+      height: 100vh;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      border: 2px solid black;
+      width: 20%;
+      height: 70%;
+      background-color: white;
+      border-radius: 10px;
+    }
+    .qr{
+      height: 60%;
+      padding: 4%;
+    }
+    .qr img{
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .text{
+      display: flex;
+      flex-direction: column;
+      justify-content:end;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10%;
+    }
+    .text h4{
+      font-size: 23px;
+      color: #203349;
+    }
+    .text p{
+      color: #a9adb2;
+      font-size: 15px;
+    }
+    @media (max-width:478px){
+      .card{
+        width: 80%;
+      }
+      .text{
+        align-items: center;
+      }
+      .text h4{
+        font-size: 25px;
+
+      }
+      .text p{
+        font-size: 16px;
+      }
+      
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="qr">
+        <img src="qr.png" alt="">
+      </div>
+      <div class="text">
+        <h4>
+        Improve your front-end<br>
+        skills by building projects
+        </h4>
+        <p>
+          Scan the QR code to visit Frontend <br>
+          Mentor and take your coding skills to <br>
+          the next level
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
